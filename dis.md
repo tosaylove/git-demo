@@ -25,4 +25,26 @@
 **注意**：每次修改过后需要重新  git add .  然后git commit -m '提示信息随便写'。才能保存日志。
 **因此**：有事情完成后在改动，比如一个图片轮播图效果
 10、回到之前状态
-  
+  命令：git reset --hard 18eb23  （18eb23是 commit后面值的前六位。）
+ 11、以上都是在本地，但是项目开发一般是协同开发，因此需要一个git服务器来同步本地的代码 **仓库**
+ git服务器有git服务器提供商（githup）。githup是一个网站。githup的东西都是‘免费’的；不开源的需要money。
+guihup.com
+注册：445223263@qq.com
+新建一个仓库
+一、推送到远端：
+①添加一个远端地址：
+命令 ：git remote add origin https://github.com/tosaylove/git-demo.git （网上有代码）
+②把本地的推送到远端。
+命令：git push origin -u master
+会提示输入用户名密码
+③刷新浏览器。
+二、重远端pull过来
+(比如说某某在远端修改了什么就重远端下载过来)
+命令：git pull origin master
+
+三、查看\新建分支\切换 分支
+命令：git branch
+四、新建分支
+命令：git branch name
+五、切换分支
+命令：git checkout v2
